@@ -1,128 +1,123 @@
 # AI Data Generator
 
-A powerful AI-powered tool for generating structured data based on any input dataset. This application uses advanced AI to analyze your data structure and generate new, realistic data that maintains the patterns and relationships of your original dataset.
+A versatile AI-powered tool that generates structured data from any CSV input. Perfect for creating test data, augmenting datasets, or generating synthetic data while maintaining the original data's patterns and relationships.
 
-## Features
+## 🚀 Key Features
 
-- 🔍 **Universal Data Analysis**: Automatically analyzes any CSV input to understand its structure and patterns
-- 🤖 **AI-Powered Generation**: Uses advanced AI to generate realistic, coherent data
-- 📊 **Distribution Maintenance**: Option to maintain statistical distributions from original data
-- 📈 **Data Preview**: Interactive visualization of both input and generated data
-- 💾 **Multiple Export Formats**: Save generated data as CSV or Excel
+- Universal CSV input support
+- AI-powered data analysis and generation
+- Distribution pattern maintenance
+- Multiple export formats (CSV/Excel)
+- Interactive web interface
 
-## Prerequisites
+## 🛠️ Quick Start
 
-- Python 3.8 or higher
-- Virtual environment (recommended)
-
-## Setup
-
-1. Clone the repository:
+1. **Setup Environment**
 ```bash
+# Clone and setup
 git clone <repository-url>
 cd ai-data-generator
-```
-
-2. Create and activate a virtual environment:
-```bash
 python3 -m venv venv
-source venv/bin/activate  # On Linux/Mac
-# or
-.\venv\Scripts\activate  # On Windows
-```
+source venv/bin/activate  # Linux/Mac
+# or .\venv\Scripts\activate  # Windows
 
-3. Install dependencies:
-```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-4. Set up your API key:
-Create a `.env` file in the project root and add your API key:
-```
-PERPLEXITY_API_KEY=your_api_key_here
+2. **Configure API**
+```bash
+# Create .env file with your API key
+echo "PERPLEXITY_API_KEY=your_api_key_here" > .env
 ```
 
-## Using the Application
-
-1. Start the web interface:
+3. **Run Application**
 ```bash
 streamlit run app.py
 ```
 
-2. Use the intuitive UI to:
-   - Upload any CSV file
-   - Preview and analyze the data
-   - Configure generation options
-   - Generate new data
-   - Download results in your preferred format
+## 💻 Usage
 
-## Web Interface Guide
+1. **Upload Data**
+   - Click 'Upload CSV' button
+   - Select any structured CSV file
+   - Preview data automatically
 
-![Data Upload](images/upload.png)
-*Upload your CSV file and preview the data structure*
+2. **Configure Generation**
+   - Set number of rows
+   - Toggle distribution maintenance
+   - Choose export format
 
-![Analysis View](images/analysis.png)
-*View detailed analysis of your data patterns*
+3. **Generate & Download**
+   - Click 'Generate Data'
+   - Preview results
+   - Download in preferred format
 
-![Generation Options](images/options.png)
-*Configure data generation settings*
+## 📊 Interface
 
-![Results View](images/results.png)
-*Preview and download generated data*
+### Data Upload
+![Upload](images/upload.png)
+*Upload and preview your data*
 
-## Input Format
+### Analysis View
+![Analysis](images/analysis.png)
+*Analyze patterns and distributions*
 
-The application accepts any well-structured CSV file:
-- Must have consistent column headers
-- Data should be properly formatted in each column
-- No limit on number of columns or data types
+### Generation Options
+![Options](images/options.png)
+*Configure generation settings*
 
-## Project Structure
+### Results
+![Results](images/results.png)
+*View and download generated data*
 
-- `app.py`: Streamlit web interface
-- `agents.py`: Core data processing and generation logic
-- `requirements.txt`: Project dependencies
-- `.env`: Environment variables (API keys)
+## 📋 Requirements
 
-## Advanced Features
+- Python 3.8+
+- Internet connection for API access
+- CSV input file
+- Dependencies listed in requirements.txt
 
-1. **Data Analysis**
-   - Column type detection
-   - Pattern recognition
-   - Relationship analysis
-   - Distribution analysis
+## 🔧 Project Structure
 
-2. **Generation Controls**
-   - Number of rows to generate
-   - Distribution maintenance options
-   - Format preservation
+```
+ai-data-generator/
+├── app.py           # Web interface
+├── agents.py        # Core logic
+├── .env            # API configuration
+├── requirements.txt # Dependencies
+└── README.md       # Documentation
+```
 
-3. **Export Options**
-   - CSV export
-   - Excel export with formatting
-   - Data validation
+## 🚨 Common Issues
 
-## Troubleshooting
+1. **API Errors**
+   ```
+   Solution: Check API key in .env
+   ```
 
-1. **API Issues**:
-   - Verify API key in `.env`
-   - Check API rate limits
-   - Ensure internet connectivity
+2. **CSV Format**
+   ```
+   Solution: Ensure consistent headers and data types
+   ```
 
-2. **Input Data Issues**:
-   - Verify CSV formatting
-   - Check for missing headers
-   - Ensure consistent data types
+3. **Generation Issues**
+   ```
+   Solution: Try smaller batch sizes or check memory
+   ```
 
-3. **Generation Issues**:
-   - Try smaller batch sizes
-   - Check memory usage
-   - Verify column constraints
+## 📝 License
 
-## Contributing
+MIT License - See [LICENSE](LICENSE) for details
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## 🤝 Contributing
 
-## License
+1. Fork the repository
+2. Create feature branch
+3. Commit changes
+4. Push to branch
+5. Open pull request
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📫 Support
+
+Open an issue for bugs or feature requests.
