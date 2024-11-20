@@ -19,7 +19,7 @@ A powerful AI-powered tool for generating structured data based on any input dat
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/elvinlari/ai-data-generator.git
 cd ai-data-generator
 ```
 
