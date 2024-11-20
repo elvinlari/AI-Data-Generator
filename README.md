@@ -14,8 +14,7 @@ A versatile AI-powered tool that generates structured data from any CSV input. P
 
 1. **Setup Environment**
 ```bash
-# Clone and setup
-git clone <repository-url>
+git clone https://github.com/elvinlari/ai-data-generator.git
 cd ai-data-generator
 python3 -m venv venv
 source venv/bin/activate  # Linux/Mac
